@@ -74,7 +74,7 @@ The Gold layer creates analytical tables answering questions such as:
 
 ![Default rate according to loan purpose](images/default_by_intent.png)
 
-![N. of loans according to loan grade] (images/loans_by_grade.png)
+![N. of loans according to loan grade](images/loans_by_grade.png)
 
 ![Default rate according to loan grade](images/default_by_grade.png)
 
