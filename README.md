@@ -4,20 +4,25 @@ This project implements an end-to-end ETL pipeline using Databricks and PySpark,
 
 The pipeline ingests the Credit Risk dataset, cleans and transforms the data, stores it as Delta tables, and produces analytical datasets to answer business questions (portfolio analysis, study of high risk clients, computing the KPIs to name a few).
 
-## Architecture of the ETL pipeline
-Credit Risk CSV (portfolio)
-      │
-      ▼
-Bronze Layer
-(raw data ingestion)
-      │
-      ▼
-Silver Layer
-(cleaning & standardization)
-      │
-      ▼
-Gold Layer
-(analytics)
+## Architecture
+
+```text
+                Kaggle CSV
+                     │
+                     ▼
+      Bronze (Raw Delta Table)
+                     │
+      Cleaning & Validation
+                     ▼
+    Silver (Curated Delta Table)
+                     │
+      Aggregations & KPIs
+                     ▼
+   Gold (Business Analytics)
+                     │
+                     ▼
+      Executive Dashboard
+```
 
 ## Technologies
 
